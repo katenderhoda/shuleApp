@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Shulecard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand -->
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/text_on_brand</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/brand_primary_dark</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+
+        <!-- Secondary reuses the success green so accent chips/switches read as "positive" -->
+        <item name="colorSecondary">@color/status_success_bright</item>
+        <item name="colorOnSecondary">@color/text_on_brand</item>
+        <item name="colorSecondaryVariant">@color/status_success</item>
+
+        <item name="colorError">@color/status_danger</item>
+        <item name="colorOnError">@color/text_on_brand</item>
+
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOutline">@color/outline</item>
+
+        <item name="android:statusBarColor">@color/brand_primary_dark</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- App-wide component defaults so screens inherit a consistent look without
+             having to restate colors/shapes on every widget. -->
+        <item name="materialButtonStyle">@style/Widget.Shulecard.Button</item>
+        <item name="toolbarStyle">@style/Widget.Shulecard.Toolbar</item>
+        <item name="textInputStyle">@style/Widget.Shulecard.TextInputLayout</item>
+        <item name="materialCardViewStyle">@style/Widget.Shulecard.Card</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="Theme.Shulecard" parent="Base.Theme.Shulecard" />
+</resources>

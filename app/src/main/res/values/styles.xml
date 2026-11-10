@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Toolbar ===================== -->
+    <style name="Widget.Shulecard.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/brand_primary</item>
+        <item name="titleTextColor">@color/text_on_brand</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Shulecard.ToolbarTitle</item>
+    </style>
+
+    <!-- ===================== Cards ===================== -->
+    <!-- cardElevation is 0dp on purpose: Material3's tonal elevation overlay tints an
+         elevated white MaterialCardView with colorSurfaceTint (our brand blue), which washed
+         every card pale blue. The 1dp outline stroke alone gives clean card definition. -->
+    <style name="Widget.Shulecard.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">18dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/outline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">18dp</item>
+    </style>
+
+    <!-- ===================== Buttons ===================== -->
+    <!-- Default filled button: brand blue, rounded, roomy tap target. -->
+    <style name="Widget.Shulecard.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/brand_primary</item>
+        <item name="android:textColor">@color/text_on_brand</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.Shulecard.Button.Success">
+        <item name="backgroundTint">@color/status_success_bright</item>
+    </style>
+
+    <style name="Widget.Shulecard.Button.Warning">
+        <item name="backgroundTint">@color/status_warning</item>
+    </style>
+
+    <style name="Widget.Shulecard.Button.Danger">
+        <item name="backgroundTint">@color/status_danger</item>
+    </style>
+
+    <style name="Widget.Shulecard.Button.Purple">
+        <item name="backgroundTint">@color/accent_purple</item>
+    </style>
+
+    <!-- Outlined secondary action: brand-colored border and text, transparent fill. -->
+    <style name="Widget.Shulecard.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">@color/brand_primary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/brand_primary_container</item>
+    </style>
+
+    <!-- Low-emphasis text link/button (e.g. "Forgot password?", "Create account"). -->
+    <style name="Widget.Shulecard.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="rippleColor">@color/brand_primary_container</item>
+    </style>
+
+    <!-- ===================== Navigation ===================== -->
+    <style name="Widget.Shulecard.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="android:background">@color/surface</item>
+        <item name="elevation">8dp</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.Shulecard.BottomNavLabel</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.Shulecard.BottomNavLabel</item>
+    </style>
+
+    <!-- ===================== Text inputs ===================== -->
+    <style name="Widget.Shulecard.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/brand_primary</item>
+        <item name="hintTextColor">@color/brand_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="boxStrokeErrorColor">@color/status_danger</item>
+        <item name="errorTextColor">@color/status_danger</item>
+    </style>
+
+    <!-- ===================== Text appearances ===================== -->
+    <style name="TextAppearance.Shulecard" parent="android:TextAppearance" />
+
+    <style name="TextAppearance.Shulecard.ToolbarTitle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/text_on_brand</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Big greeting / page hero text, e.g. "Hello, Grace Okello". -->
+    <style name="TextAppearance.Shulecard.ScreenTitle">
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Section headers inside a card, e.g. "Quick Actions". -->
+    <style name="TextAppearance.Shulecard.SectionTitle">
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Shulecard.Body">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextAppearance.Shulecard.Subtitle">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Shulecard.BottomNavLabel" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="TextAppearance.Shulecard.Caption">
+        <item name="android:textColor">@color/text_tertiary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

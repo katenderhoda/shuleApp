@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Marks a content view already wired by SystemBarInsets, so it isn't re-wired on every onStart. -->
+    <item name="tagSystemBarInsets" type="id" />
+</resources>
